@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Iconarchive-Realistic-Fruits-Plum.ico" type="image/x-icon"> 
+    <title>Formatações em HTML5</title>
+    <style>
+        mark {
+            background-color: rgba(128, 0, 128, 0.404);
+        }
+
+        body {
+            text-align: center;
+            margin:auto;
+            background-color: rgb(160, 211, 245);
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        ol {
+            text-align: left;
+        }
+        dl {
+            text-align: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><mark>Principais Formatações em HTML5</mark>
+    </h1>
+
+    <h2>Negrito / Destaque</h2>
+        <p>
+            <b>Maneira não semântica com tag &lt;u&gt;</b>
+            <br>
+            <strong>Maneira Semântica com tag &lt;strong&gt;</strong>
+        </p>
+
+    <h2>Itálico / Ênfase</h2>
+        <p>
+            <i>Maneira não semântica com tag &lt;i&gt;</i>
+            <br>
+            <em>Maneira Semântica com tag &lt;em&gt;</em>
+        </p>
+
+    <h2>Texto marcado</h2>
+        <p>
+            <mark style="background-color: rgb(0, 247, 255);">Maneira semântica com tag &lt;mark&gt;</mark>
+            <br>
+            <mark>Não tem maneira não semântica</mark>
+        </p>    
+
+    <h2>Texto grande e pequeno</h2>
+        <p>
+            <big>O texto grande com tag &lt;big&gt; caiu em desuso</big>
+            <br>
+            <small>O texto pequeno usa-se a tag semântica &lt;small&gt;</small>
+        </p>
+        
+    <h2>Texto deletado</h2>    
+        <p>
+            <del>Texto deletado semântico tag &lt;del&gt;</del>
+            <br>
+            <del>Não tem tag não semântica</del>
+        </p>
+    
+    <h2>Texto inserido</h2>
+        <p>
+            <ins>Maneira semântica com tag &lt;ins&gt;</ins>
+            <br>
+            <u>Maneira não semântica com tag &lt;u&gt;</u>
+        </p>
+    
+    <h2>Texto sobrescrito</h2>    
+        <p>
+            Método semântico com tag &lt;sup&gt;
+            <br>
+            a<sup>2</sup>+b<sup>2</sup> = c<sup>2</sup>
+        </p>
+
+    <h2>Texto subescrito</h2>
+        <p>
+            Método semântico com tag &lt;sub&gt;
+            <br>
+            C<sub>4</sub>H<sub>4</sub>
+        </p>    
+
+    <h2>Código-fonte / Pré-formatação</h2>
+        <p>
+            Método semântico com tag &lt;code&gt;
+            <br>
+            <code>document.querySelector('input#btn')</code>
+        </p>
+        <p>
+            Bloco de código juntando com tag &lt;pre&gt;
+            <code>
+                <pre>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+                </pre>
+            </code>
+        </p>
+    <h2>Citações Simples</h2>
+        <p>
+            Método Semântico com tag &lt;q&gt;
+            <br>
+            <q>O computador é um burro muito rápido</q>
+        </p>    
+    <h2>Citações Completas</h2>
+        <p>
+            Metódo Semântico pra citação maior com tag &lt;blockquote&gt;
+            <br>
+            <p>Para Maurício Samy</p>
+            <blockquote cite="https://www.google.com.br/books/edition/HTML5_2%C2%AA_Edi%C3%A7%C3%A3o/f7JVBQAAQBAJ?hl=pt-BR&gbpv=1">
+                O HTML revolucionou a forma de pensar designs
+            </blockquote>
+        </p>    
+    <h2>Abreviações</h2>
+        <p>
+            Método semântico com tag &lt;abbr&gt;
+            <br>
+            A <abbr title="Confederação Brasileira de Futebol">CBF</abbr> e a <abbr title="Confederação Brasileira de Voleibol">CBV</abbr>, juntamente, anunciaram um torneio de <strong>futevôlei misto </strong>
+        </p>    
+    <h2>Texto invertido</h2>
+        <p>
+            <bdo dir="rtl">Maneira semântica com tag &lt;bdo&gt;</bdo>
+            <br>
+            <bdo dir="rtl">Esse texto está invertido para testar um funcionalidade existente em HTML5
+            </bdo>
+        </p>   
+    <h2>Lista ordenada</h2>
+        <p>
+            Maneira Semântica com tag &lt;ol&gt;
+            <ol type="I">
+                <li>Acordar</li>
+                <li>Banheiro</li>
+                <li>Tirar aparelho</li>
+                <li>Tomar café</li>
+                <li>Escovar os dentes</li>
+                <li>Trabalhar</li>
+            </ol>
+        </p>   
+    <h2>Lista desordenada</h2>
+        <p>
+            Skins de CS:GO
+            <ul type="square">
+                <li>Blaze</li>
+                <li>Fire Serpent</li>
+                <li>Fade</li>
+                <li>Doppler</li>
+                    <ul>
+                        <li>Ruby</li>
+                        <li>Sapphire</li>
+                        <li>Emerald</li>
+                        <li>Doppler Phase</li>
+                            <ul type="disc">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                            </ul>
+                        <li>Gamma Doppler</li>
+                            <ul type="disc">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                            </ul>
+                    </ul>
+                <li>Printstream</li>
+                <li>Dragon Lore</li>
+                <li>Gungnir</li>
+            </ul>
+        </p>    
+        <h2>Lista mista</h2>  
+            <p>
+                <ol>
+                    <li>Antigas</li>
+                        <ul type="a">
+                            <li>Cobol</li>
+                            <li>Clipper</li>
+                        </ul>
+                    <li>Novas</li>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
+                </ol>
+            </p>
+        <h2>Lista de definições</h2>
+            <p>
+                <dl>
+                    <dt>Termo</dt>
+                    <dd>Descrição</dd>
+                    <br>
+                    <dt>HTML</dt>
+                    <dd>Linguagem de marcação para organização de sites</dd>
+                    <br>
+                    <dt>CSS</dt>
+                    <dd>Linguagem de marcação para design de sites</dd>
+                    <br>
+                    <dt>JavaScript</dt>
+                    <dd>Linguagem de programação e interatividade de sites</dd>
+                </dl>
+            </p>    
+</body>
+</html>

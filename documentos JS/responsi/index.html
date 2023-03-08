@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+</head>
+<body>
+    <h1>Imagens de tamanhos diferentes</h1>
+    <p>
+        <picture>
+            <source media="(max-width: 200px)" srcset="imagens/pp.jpg" type="image/jpg">
+            <source media="(max-width: 350px)" srcset="imagens/p.jpg" type="image/jpg">
+            <source media="(max-width: 550px)" srcset="imagens/mm.jpg" type="image/jpg">
+            <source media="(max-width: 750px)" srcset="imagens/m.jpg" type="image/jpg">
+            <source media="(max-width: 1050px )" srcset="imagens/g.jpg" type="image/jpg">
+            <img src="imagens/gg.jpg" alt="imagemf">
+        </picture>
+
+        <p>Alo</p>
+        <audio preload="metadata" autoplay>
+            <source src="midia/mus.mp3" type="audio/mpeg">
+        </audio>
+    </p>
+</body>
+</html>
